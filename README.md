@@ -15,10 +15,29 @@ The happiness data is on the average of four dataframes with the results obtaine
 
 The Happiness Score is a national average of the responses to the main life evaluation question asked in the Gallup World Poll (GWP), which uses the Cantril Ladder. They ask respondents to think of a step with the most excellent conceivable life for them being a 10 and the most exceedingly bad conceivable life being a and to rate their claim current lives on that scale. It is explained by the following factors: GDP per capita, Healthy Life Expectancy, Social support, Freedom to make life choices, Generosity, Corruption Perception and Residual error.
 
+## Results
+figures/Happiness_GDP_population.png
+
+
+
+## Files
+
+- data: folder with four csv dataframes.
+- figures: folder with four html files and four png files. Those are the charts that we created.
+- jupyter notebooks: two jupyter notebook files with all the previous researching, cleaning and transforming.
+- src: three pyhton files with downloading, cleaning and vizualization functions.
+- README.md
+- main.py: The main file, you need to execute the file using *pyhton main.py* and see the results of the analysis.
+
 
 ## Technologies
 
-###Libraries used:
+Jupyter notebook
+Python
+html
+
+### Libraries used:
+
 - import pandas as pd
 - import re
 - import seaborn as sns
@@ -27,15 +46,10 @@ The Happiness Score is a national average of the responses to the main life eval
 - import plotly.offline as opy
 - import plotly.express as px
 - import plotly.io as pio
+- from lxml import html
+- import requests
 
 Git clone and you can execute the code on your terminal using: pyhton main.py
-
-
-## Results
-
-![Happiness_GDP_population.png](attachment:Happiness_GDP_population.png)
-
-
 
 ## References: 
 

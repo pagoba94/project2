@@ -6,6 +6,8 @@ import plotly.graph_objects as go
 import plotly.offline as opy
 import plotly.express as px
 import plotly.io as pio
+from lxml import html
+import requests
 
 import src.downloading as dl
 import src.cleaning as cl
