@@ -16,9 +16,19 @@ The happiness data is on the average of four dataframes with the results obtaine
 The Happiness Score is a national average of the responses to the main life evaluation question asked in the Gallup World Poll (GWP), which uses the Cantril Ladder. They ask respondents to think of a step with the most excellent conceivable life for them being a 10 and the most exceedingly bad conceivable life being a and to rate their claim current lives on that scale. It is explained by the following factors: GDP per capita, Healthy Life Expectancy, Social support, Freedom to make life choices, Generosity, Corruption Perception and Residual error.
 
 ## Results
-figures/Happiness_GDP_population.png
+Taking into account that the happiness rank is measured as 1 for the highest happiness and 157 for the lowest happiness, we can see in the world graph that there is a large majority of unhappiness in Africa, the poorest continent in the world. 
+![Happiness_worldmap](https://user-images.githubusercontent.com/127286755/235519243-d6da66e9-0bd2-44f3-a7be-599be2d3aa20.png)
 
+On the other hand, the line graph shows that countries with a higher happiness score have lower temperatures than countries with a lower happiness rank, which are mostly countries with higher average temperatures.
+![Happiness_temperature_line](https://user-images.githubusercontent.com/127286755/235519727-3e5cc9d8-6ce5-4de9-977f-00f4714328d3.png)
 
+Finally, the scatter plot shows that the countries with the highest GDP are those with the best happiness index, as well as the average temperatures and the population of the countries (the size of the circles), and we see that there is no great difference between larger and smaller countries, but none of the happiest is China or India, the two largest countries. 
+![Happiness_GDP_population](https://user-images.githubusercontent.com/127286755/235519285-481ba352-0081-499a-a0bb-9b9bbbd05b68.png)
+
+## Conclusions
+After this analysis, we see that the happiest country according to this study is Finland, with a population of 5.7 million, well below the world average of 49 million, with an average GDP per capita score of 1.38, taking into account that the maximum value in the table is 1.75, we can say that it is one of the richest countries. And with one of the lowest average temperatures, with 1.55 degrees Celsius.  
+
+So, taking this into account: The happiest countries are richer and colder.
 
 ## Files
 
