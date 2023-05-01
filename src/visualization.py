@@ -3,6 +3,7 @@ import plotly.offline as opy
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
+import plotly.io as pio
 
 
 def happiness_temperature_scatter(df):
@@ -20,7 +21,7 @@ def happiness_temperature_scatter(df):
     fig = px.scatter(df, x="Mean Happiness Score", y="Average yearly temperature", 
                      color="Average yearly temperature", hover_name="Country", title="Countries happiness Score and their temperature")
     
-  
+    pio.write_html(fig, file='figures/happiness_temperature_scatter.html', auto_open=True)
     fig.show()
 
 
@@ -43,6 +44,7 @@ def happiness_temperature(df):
     fig.update_layout(title='Countries happiness Score and their temperature', xaxis=dict(tickfont=dict(size=12)), yaxis=dict(tickfont=dict(size=12)))
     fig.update_traces(mode='markers+lines', marker=dict(size=8))
     
+    pio.write_html(fig, file='figures/happiness_temperature_line.html', auto_open=True)
     fig.show()
 
 
@@ -58,8 +60,6 @@ def happiness_worldmap(df):
 
     Return
     """
-    import plotly.graph_objects as go
-    import plotly.offline as opy
 
     fig = go.Figure(go.Choropleth(
         locations = df['Country'],
@@ -89,6 +89,8 @@ def happiness_worldmap(df):
             coastlinecolor = '#dadada'
         )
     )
+
+    pio.write_html(fig, file='figures/happiness_worldmap.html', auto_open=True)
     fig.show()
 
 
@@ -104,6 +106,8 @@ def happiness_GDP(df):
                   xaxis_title='Mean Happiness Score',
                   yaxis_title='Mean GDP per Capita',
                   legend_title='Country')
+    
+    pio.write_html(fig, file='figures/happiness_GDP_population.html', auto_open=True)
     fig.show()
 
 
