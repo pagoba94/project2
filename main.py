@@ -1,12 +1,10 @@
 import pandas as pd
 import re
 import seaborn as sns
-import os
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import plotly.offline as opy
 import plotly.express as px
-import plotly.graph_objects as go
 import plotly.io as pio
 
 import src.downloading as dl
